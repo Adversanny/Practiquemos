@@ -1,0 +1,67 @@
+body {
+    background-color: beige;
+}
+
+nav {
+    display: grid;
+    align-items: start; /* Alinea los elementos al inicio del contenedor */
+    background: blue;
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+}
+
+nav .Left .ProfilePicture {
+    font-size: 24px;
+    font-weight: black;
+}
+
+nav .Left .Components {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-right: 30px;
+}
+
+nav .Left .Components button {
+    border: 1px;
+    background-color: aqua;
+}
+
+nav .Left .Components button:hover {
+    cursor: pointer;
+    background-color: rgb(85, 180, 218);
+}
+
+nav .Right .User {
+    font-size: 24px;
+    font-weight: black;
+}
+
+nav .Right .SecondaryFunctions {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-right: 30px;
+}
+
+nav .Right .SecondaryFunctions button {
+    border: 1px;
+    background-color: rgba(189, 45, 158, 0.966);
+}
+
+nav .Right .SecondaryFunctions button:hover {
+    cursor: pointer;
+    background-color: rgb(150, 40, 194);
+}
+
+/* Establece el iframe para que ocupe toda la pantalla con un margen de 150px en la parte superior */
+iframe {
+    background-color: azure;
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 90px);
+    border: none;
+}

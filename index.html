@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <nav>
+    <section class="Left">
+      <div class="ProfilePicture">
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
+      </div><br>
+      <div class="Components">
+        <button onclick='iframe("./html/MyHistory.html")'>Mi historia</button>
+        <button onclick='iframe("./html/BiefCase.html")'>Portafolio</button>
+        <button onclick='iframe("./html/Me.html")'>Mi informacion</button>
+      </div>
+    </section>
+    <section class="Right">
+      <div id="User">
+        Jonny Esteban Gómez Alvarado
+      </div><br>
+      <div class="SecondaryFunctions">
+        <button onclick="iframe('./html/historial.html')">historial</button>
+        <button onclick="iframe('./html/favoritos.html')">favoritos</button>
+        <button onclick="iframe('./html/carro.html')">carro</button>
+      </div>
+    </section>
+  </nav>
+  <iframe src="./html/Me.html" id="frame"></iframe>
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>
